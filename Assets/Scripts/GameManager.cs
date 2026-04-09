@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
 
     void Deal()
     {
-
+        //will likely need to instantiate a blank card then load card data into card
     }
 
     void Shuffle()
