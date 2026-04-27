@@ -1,21 +1,21 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class Movement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float movementSpeed = 2f;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("pressed space");
-        
+            transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime);
         }
-        if (Input.GetKey)
     }
 }
